@@ -12,7 +12,7 @@
 import ReportItem from './ReportItem.client';
 const ReportTable = ({ reports }) => {
     return (
-        <div className="overflow-x-auto bg-white rounded shadow-lg">
+        <div className="overflow-x-auto bg-white rounded ">
             <table className="min-w-full leading-normal">
                 <thead>
                     <tr>
@@ -22,7 +22,7 @@ const ReportTable = ({ reports }) => {
                         <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600  tracking-wider">
                             Report Name
                         </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600  tracking-wider">
+                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-center text-sm font-semibold text-gray-600  tracking-wider">
                             Download
                         </th>
                     </tr>

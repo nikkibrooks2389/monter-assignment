@@ -20,17 +20,17 @@ const ReportItem = ({ report }) => {
     };
 
     return (
-        <tr className="hover:bg-gray-100">
-            <td className="px-5 py-3 border-b border-gray-200 bg-white">
+        <tr className="">
+            <td className="px-5 py-3  bg-white">
                 {/* Date */}
                 <div className="text-gray-900 whitespace-no-wrap">{getDate(report.date)}</div>
                 <div className="text-gray-300 text-xs">{getTime(report.date)}</div>
             </td>
-            <td className="px-5 py-3 border-b border-gray-200 bg-white">
+            <td className="px-5 py-3  bg-white">
                 {/* Report Name */}
                 <div className="text-gray-900 whitespace-no-wrap">{report.reportName}</div>
             </td>
-            <td className="px-5 py-3 border-b border-gray-200 bg-white text-center">
+            <td className="px-5 py-3  bg-white text-center">
                 {/* Download Button */}
                 <button onClick={handleDownload} className="inline-block text-blue-600 hover:text-blue-800">
                     <img src="/download.png" alt="Download" className="w-8 h-8" />

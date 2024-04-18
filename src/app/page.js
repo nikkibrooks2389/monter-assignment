@@ -28,13 +28,15 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <ReportPanel>
         <ReportList reports={currentReports} />
-        <Paginator
-          totalPages={Math.ceil(reportData.length / rowsPerPage)}
-          currentPage={currentPage}
-          onPageChange={handlePageChange}
-          rowsPerPage={rowsPerPage}
-          onRowsPerPageChange={handleRowsPerPageChange}
-        />
+        <div className="p-4 border-t border-gray-200">
+          <Paginator
+            totalPages={Math.ceil(reportData.length / rowsPerPage)}
+            currentPage={currentPage}
+            onPageChange={handlePageChange}
+            rowsPerPage={rowsPerPage}
+            onRowsPerPageChange={handleRowsPerPageChange}
+          />
+        </div>
       </ReportPanel>
     </main>
   );
