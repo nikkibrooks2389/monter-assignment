@@ -1,4 +1,5 @@
 // components/ReportPanel.js
+
 const ReportPanel = ({ children }) => {
     return (
         <div className="container mx-auto mt-5 bg-white rounded shadow-lg">
