@@ -12,27 +12,29 @@
 import ReportItem from './ReportItem.client';
 const ReportTable = ({ reports }) => {
     return (
-        <div className="overflow-x-auto bg-white rounded ">
-            <table className="min-w-full leading-normal">
-                <thead>
-                    <tr>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600  tracking-wider">
-                            Date
-                        </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600  tracking-wider">
-                            Report Name
-                        </th>
-                        <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-center text-sm font-semibold text-gray-600  tracking-wider">
-                            Download
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {reports.map((report, index) => (
-                        <ReportItem key={index} report={report} />
-                    ))}
-                </tbody>
-            </table>
+        <div className="flex flex-col flex-grow overflow-y-auto" >
+            <div className="overflow-x-auto bg-white rounded">
+                <table className="min-w-full leading-normal bg-white rounded">
+                    <thead>
+                        <tr>
+                            <th className="sticky top-0 px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600 tracking-wider">
+                                Date
+                            </th>
+                            <th className="sticky top-0 px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600 tracking-wider">
+                                Report Name
+                            </th>
+                            <th className="sticky top-0 px-10 py-3 border-b-2 border-gray-200 bg-gray-100 text-right text-sm font-semibold text-gray-600 tracking-wider">
+                                Download
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        {reports.map((report, index) => (
+                            <ReportItem key={index} report={report} />
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };

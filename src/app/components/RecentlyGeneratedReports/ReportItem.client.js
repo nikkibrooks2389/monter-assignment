@@ -30,7 +30,7 @@ const ReportItem = ({ report }) => {
                 {/* Report Name */}
                 <div className="text-gray-900 whitespace-no-wrap">{report.reportName}</div>
             </td>
-            <td className="px-5 py-3  bg-white text-center">
+            <td className="px-14 py-3  bg-white text-right">
                 {/* Download Button */}
                 <button onClick={handleDownload} className="inline-block text-blue-600 hover:text-blue-800">
                     <img src="/download.png" alt="Download" className="w-8 h-8" />

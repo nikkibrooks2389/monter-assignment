@@ -65,7 +65,7 @@ const Paginator = ({ totalPages, currentPage, onPageChange, rowsPerPage, onRowsP
                 disabled={currentPage === 1}
                 className="px-2 py-1 mr-1 text-sm  rounded-md"
             >
-                {'<<'}
+                {'|<'}
             </button>
             <button
                 onClick={handlePrevious}
@@ -98,7 +98,7 @@ const Paginator = ({ totalPages, currentPage, onPageChange, rowsPerPage, onRowsP
                 disabled={currentPage === totalPages}
                 className="px-2 py-1 mr-1 text-sm  rounded-md"
             >
-                {'>>'}
+                {'>|'}
             </button>
             <div className="mr-2 ml-10">
                 Rows per page:
